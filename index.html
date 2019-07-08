@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script async="" src="main.js"></script>
+	</head>
+	<body>
+		<div id="pageHeader">
+			<h1> This page contains the requested coding for Gage</h1>
+		</div>
+		<div id="pageDescription">
+			<p>Herein these files contains the coding done by Gage for a coding test. I admit I tried to add a bit of flair instead of strictly to what the instructions said but I also tried not to stray too far from the path. I have included interactable html elements for you to test out the javascript part of the coding test. As well as the protoypes further down the page.</p>
+		</div>
+		<div id="accountFormContainer">
+			<t1> ACCOUNT FORM</t1>
+			<form id="accountInfoForm">
+				<div class="formLabel">First Name</div>
+				<div class="formInput"><input type="" name="accountFirstName"></div>
+				<div class="formLabel">Last Name</div>
+				<div class="formInput"><input type="" name="accountLastName"></div>
+				<div class="formLabel">Account Name</div>
+				<div class="formInput"><input type="" name="accountUserName" id="accountUserName"></div>
+				<div class="formLabel">Password</div>
+				<div class="formInput"><input type="password" name="accountPassword"></div>
+				<div class="formLabel">Repeat Password</div>
+				<div class="formInput"><input type="password" name="accountPasswordRepeat"></div>
+				<div class="formLabel">Which U.S. State do you live in? (CAUTION STYLED WITH ITERATIVE SCSS)</div>
+				<div class="formInput">
+				<select id="accountStateDropdown" name="accountState">
+					<option value="None">-Select a State-</option>
+					<!-- populated by javascript -->
+				</select>
+				</div>
+				<br>
+				<div class="formInput">
+					<input type="submit" name="accountSubmit" value="Submit Account Info">
+					<input type="reset" name="formReset" value="Reset Form Info"/>
+				</div>
+			</form>
+			<div id="accountSubmitResponse"></div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<div><h3> PART III </h3></div>
+
+		<div> Transform Input </div>
+		<input id="customTransform" value="3, 1, 4, 5, 2"></input>
+		<div>
+			<button onclick="transformTheNums();">| execute "transformNums" |</button>
+		</div>
+		<div> Transform Output </div>
+		<input id="transformOutput" value ="" style="width: 50%"></input>
+
+		<br>
+		<br>
+		<br>
+
+		<div> Number of Items to make </div>
+		<input id="newItemValue" value ="100"></input>
+		<div>
+			<button onclick="displayNewItems();">| make new Items |</button>
+		</div>
+		<div> Items Ouput </div>
+		<table style="width:50%">
+			<thead>
+				<tr>
+					<th>Item Number</th>
+					<th>Item String</th> 
+				</tr>
+			</thead>
+			<tbody id="itemsTableBody">
+			</tbody>
+		</table>
+
+		<br>
+		<br>
+		<br>
+
+		<div id="trainwreckContainter">
+			<div id="trainwreckFormContainer">
+				<h1>Train Wreck!</h1>
+				<h3>A train leaves Maryland, traveling north to a town some distance away. Another train leaves that town at either the same time, or on a brief delay, traveling south on the same track. Play with the settings below to see when they will collide. Remember, that rate * time = distance.</h3>
+				<table>
+					<tr>
+						<th class="trainAValue">Train A - Speed (mph)</th>
+						<th class="trainBValue">Train B - Speed (mph)</th> 
+					</tr>
+					<tr>
+						<td><input type="Number" id="trainASpeed" class="trainAValue" name="trainASpeed" min="0" max="9000" value="60"></td>
+						<td><input type="Number" id="trainBSpeed" class="trainBValue" min="0" max="9000" value="60"></td>
+					</tr>
+					<tr>
+						<th>Distance between towns (miles)</th>
+						<th class="trainBValue" >Train B - delay (minutes)</th>
+					</tr>
+					<tr>
+						<td><input type="Number" id="trainDistance" min="0" max="9000" value="200"></td>
+						<td><input type="Number" id="trainBDelay" class="trainBValue" min="0" max="9000" value="15"></td>
+					</tr>
+				</table>
+				<input type="button" name="" value="Try it!" onclick="calculateTrainCrash();">
+				<h1>Result:</h1>
+				<div>
+					<div id="trainVisualContainer">
+						<span id="trainBVisual"></span>
+						<span id="trainAVisual"></span>
+						<span id="trainSmashText"><b>Smash!</b></span>
+					</div>
+				</div>
+				<div id="trainResultText"> Try it out! </div>
+			</div>
+		</div>
+	</body>
+</html>

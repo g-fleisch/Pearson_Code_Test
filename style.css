@@ -1,0 +1,219 @@
+#accountInfoForm {
+  padding-bottom: 100px; }
+
+option:nth-child(1) {
+  background-color: #003870;
+  color: red; }
+
+option:nth-child(2) {
+  background-color: #003d7a;
+  color: teal; }
+
+option:nth-child(3) {
+  background-color: #004285;
+  color: orange; }
+
+option:nth-child(4) {
+  background-color: #00478f;
+  color: pink; }
+
+option:nth-child(5) {
+  background-color: #004d99;
+  color: black; }
+
+option:nth-child(6) {
+  background-color: #0052a3;
+  color: chocolate; }
+
+option:nth-child(7) {
+  background-color: #0057ad;
+  color: darkgreen; }
+
+option:nth-child(8) {
+  background-color: #005cb8;
+  color: darkgrey; }
+
+option:nth-child(9) {
+  background-color: #0061c2;
+  color: firebrick; }
+
+option:nth-child(10) {
+  background-color: #0066cc;
+  color: greenyellow; }
+
+option:nth-child(11) {
+  background-color: #006bd6;
+  color: honeydew; }
+
+option:nth-child(12) {
+  background-color: #0070e0;
+  color: indigo; }
+
+option:nth-child(13) {
+  background-color: #0075eb;
+  color: ivory; }
+
+option:nth-child(14) {
+  background-color: #007af5;
+  color: lavender; }
+
+option:nth-child(15) {
+  background-color: #0080ff;
+  color: lawngreen; }
+
+option:nth-child(16) {
+  background-color: #0a85ff;
+  color: lightblue; }
+
+option:nth-child(17) {
+  background-color: #148aff;
+  color: lightcyan; }
+
+option:nth-child(18) {
+  background-color: #1f8fff;
+  color: lightgrey; }
+
+option:nth-child(19) {
+  background-color: #2994ff;
+  color: lightgreen; }
+
+option:nth-child(20) {
+  background-color: #3399ff;
+  color: lightpink; }
+
+option:nth-child(21) {
+  background-color: #3d9eff;
+  color: lime; }
+
+option:nth-child(22) {
+  background-color: #47a3ff;
+  color: linen; }
+
+option:nth-child(23) {
+  background-color: #52a8ff;
+  color: magenta; }
+
+option:nth-child(24) {
+  background-color: #5cadff;
+  color: maroon; }
+
+option:nth-child(25) {
+  background-color: #66b3ff;
+  color: mediumblue; }
+
+option:nth-child(26) {
+  background-color: #70b8ff;
+  color: mediumpurple; }
+
+option:nth-child(27) {
+  background-color: #7abdff;
+  color: mistyrose; }
+
+option:nth-child(28) {
+  background-color: #85c2ff;
+  color: navy; }
+
+option:nth-child(29) {
+  background-color: #8fc7ff;
+  color: olive; }
+
+option:nth-child(30) {
+  background-color: #99ccff;
+  color: oldlace; }
+
+option:nth-child(30) {
+  background-color: #f7cdde; }
+
+option:nth-child(31) {
+  background-color: #f5c5d8; }
+
+option:nth-child(32) {
+  background-color: #f4bcd2; }
+
+option:nth-child(33) {
+  background-color: #f2b3cc; }
+
+option:nth-child(34) {
+  background-color: #f1aac7; }
+
+option:nth-child(35) {
+  background-color: #efa2c1; }
+
+option:nth-child(36) {
+  background-color: #ee99bb; }
+
+option:nth-child(37) {
+  background-color: #ed90b5; }
+
+option:nth-child(38) {
+  background-color: #eb88af; }
+
+option:nth-child(39) {
+  background-color: #ea7faa; }
+
+option:nth-child(40) {
+  background-color: #e876a4; }
+
+option:nth-child(41) {
+  background-color: #e76d9e; }
+
+option:nth-child(42) {
+  background-color: #e56598; }
+
+option:nth-child(43) {
+  background-color: #e45c92; }
+
+option:nth-child(44) {
+  background-color: #e2538c; }
+
+option:nth-child(45) {
+  background-color: #e14a87; }
+
+option:nth-child(46) {
+  background-color: #df4281; }
+
+option:nth-child(47) {
+  background-color: #de397b; }
+
+option:nth-child(48) {
+  background-color: #dd3075; }
+
+option:nth-child(49) {
+  background-color: #db276f; }
+
+option:nth-child(50) {
+  background-color: #d5236a; }
+
+option:nth-child(51) {
+  background-color: #cc2266; }
+
+table {
+  text-align: left; }
+
+.trainAValue {
+  /*color: $trainA */ }
+
+.trainBValue {
+  /*color: $trainB */ }
+
+#trainVisualContainer {
+  height: 40px;
+  width: 50%; }
+  #trainVisualContainer #trainAVisual, #trainVisualContainer #trainBVisual {
+    position: relative;
+    height: 10px;
+    display: block; }
+  #trainVisualContainer #trainAVisual {
+    background-color: #00FFFF;
+    width: 50%;
+    top: 10px; }
+  #trainVisualContainer #trainBVisual {
+    background-color: #FFA500;
+    width: 100%;
+    top: 20px; }
+  #trainVisualContainer #trainSmashText {
+    position: relative;
+    top: -20px;
+    left: 50%; }
+
+/*# sourceMappingURL=style.css.map */

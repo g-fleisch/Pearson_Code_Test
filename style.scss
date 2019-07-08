@@ -1,0 +1,64 @@
+$trainA : #00FFFF;
+$trainB : #FFA500;
+
+#accountInfoForm {
+	padding-bottom: 100px;
+}
+
+
+$list: red teal orange pink black chocolate darkgreen darkgrey firebrick greenyellow
+ honeydew indigo ivory lavender lawngreen lightblue lightcyan lightgrey lightgreen lightpink
+ lime linen magenta maroon mediumblue mediumpurple mistyrose navy olive oldlace;
+
+$base-color: #036;
+$other-base-color: #c26;
+
+@for $i from 1 through 30 {
+  option:nth-child(#{$i}) {
+    background-color: lighten($base-color, $i * 2%);
+    color: nth($list, $i);
+  }
+}
+
+@for $i from 30 through 51 {
+  option:nth-child(#{$i}) {
+    background-color: lighten($other-base-color, (51 - $i) * 2%);
+  }
+}
+
+table {
+	text-align: left;
+}
+
+.trainAValue {
+	/*color: $trainA */
+}
+.trainBValue {
+	/*color: $trainB */
+}
+
+#trainVisualContainer {
+	height: 40px;
+	width: 50%;
+	#trainAVisual, #trainBVisual {
+		position: relative;
+		height: 10px;
+		display: block;
+	}
+	#trainAVisual {
+		background-color: $trainA;
+		width: 50%;
+		top: 10px;
+	}
+	#trainBVisual {
+		background-color: $trainB;
+		width: 100%;
+		top: 20px;
+	}
+	#trainSmashText {
+		position: relative;
+		top: -20px;
+		left: 50%;
+	}
+}
+
