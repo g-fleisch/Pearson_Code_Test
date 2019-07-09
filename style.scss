@@ -2,9 +2,13 @@ $trainA : #00FFFF;
 $trainB : #FFA500;
 
 #accountInfoForm {
-	padding-bottom: 100px;
+	padding-bottom: 10px;
 }
 
+#trainwreckContainter {
+	width: 50%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
 
 $list: red teal orange pink black chocolate darkgreen darkgrey firebrick greenyellow
  honeydew indigo ivory lavender lawngreen lightblue lightcyan lightgrey lightgreen lightpink
@@ -39,7 +43,6 @@ table {
 
 #trainVisualContainer {
 	height: 40px;
-	width: 50%;
 	#trainAVisual, #trainBVisual {
 		position: relative;
 		height: 10px;
@@ -60,5 +63,24 @@ table {
 		top: -20px;
 		left: 50%;
 	}
+}
+
+#tryitButton {
+	background-color: orange;
+	color: ivory;
+	border-radius: 5px;
+	width: 80px;
+	height: 40px;
+	font-size: 1.1em;
+}
+
+.trainInput {
+	width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	border-color: lightgrey;
+	color: grey;
+	font-size: 1.1em;
+	margin-right: 20px;
 }
 

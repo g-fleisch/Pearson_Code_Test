@@ -81,38 +81,36 @@
 		<br>
 
 		<div id="trainwreckContainter">
-			<div id="trainwreckFormContainer">
-				<h1>Train Wreck!</h1>
-				<h3>A train leaves Maryland, traveling north to a town some distance away. Another train leaves that town at either the same time, or on a brief delay, traveling south on the same track. Play with the settings below to see when they will collide. Remember, that rate * time = distance.</h3>
-				<table>
-					<tr>
-						<th class="trainAValue">Train A - Speed (mph)</th>
-						<th class="trainBValue">Train B - Speed (mph)</th> 
-					</tr>
-					<tr>
-						<td><input type="Number" id="trainASpeed" class="trainAValue" name="trainASpeed" min="0" max="9000" value="60"></td>
-						<td><input type="Number" id="trainBSpeed" class="trainBValue" min="0" max="9000" value="60"></td>
-					</tr>
-					<tr>
-						<th>Distance between towns (miles)</th>
-						<th class="trainBValue" >Train B - delay (minutes)</th>
-					</tr>
-					<tr>
-						<td><input type="Number" id="trainDistance" min="0" max="9000" value="200"></td>
-						<td><input type="Number" id="trainBDelay" class="trainBValue" min="0" max="9000" value="15"></td>
-					</tr>
-				</table>
-				<input type="button" name="" value="Try it!" onclick="calculateTrainCrash();">
-				<h1>Result:</h1>
-				<div>
-					<div id="trainVisualContainer">
-						<span id="trainBVisual"></span>
-						<span id="trainAVisual"></span>
-						<span id="trainSmashText"><b>Smash!</b></span>
-					</div>
+			<h1>Train Wreck!</h1>
+			<h4>A train leaves Maryland, traveling north to a town some distance away. Another train leaves that town at either the same time, or on a brief delay, traveling south on the same track. Play with the settings below to see when they will collide. Remember, that rate * time = distance.</h4>
+			<table>
+				<tr>
+					<th class="trainAValue">Train A - Speed (mph)</th>
+					<th class="trainBValue">Train B - Speed (mph)</th> 
+				</tr>
+				<tr>
+					<td><input type="text" id="trainASpeed" class="trainInput trainAValue" name="trainASpeed" min="0" max="9000" value="60"></td>
+					<td><input type="text" id="trainBSpeed" class="trainInput trainBValue" min="0" max="9000" value="60"></td>
+				</tr>
+				<tr>
+					<th>Distance between towns (miles)</th>
+					<th class="trainBValue" >Train B - delay (minutes)</th>
+				</tr>
+				<tr>
+					<td><input type="text" id="trainDistance" class="trainInput" min="0" max="9000" value="200"></td>
+					<td><input type="text" id="trainBDelay" class="trainInput trainBValue" min="0" max="9000" value="15"></td>
+				</tr>
+			</table>
+			<input type="button" id="tryitButton" name="" value="Try it!" onclick="calculateTrainCrash();">
+			<h1>Result:</h1>
+			<div>
+				<div id="trainVisualContainer">
+					<span id="trainBVisual"></span>
+					<span id="trainAVisual"></span>
+					<span id="trainSmashText"><b>Smash!</b></span>
 				</div>
-				<div id="trainResultText"> Try it out! </div>
 			</div>
+			<div id="trainResultText"> Try it out! </div>
 		</div>
 	</body>
 </html>
